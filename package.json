@@ -1,0 +1,37 @@
+{
+  "name": "gitmux",
+  "version": "0.1.0",
+  "description": "Automatic Git identity routing for GitHub and Bitbucket across work, client, and personal projects.",
+  "type": "module",
+  "bin": {
+    "gitmux": "./bin/gm.js",
+    "gm": "./bin/gm.js"
+  },
+  "scripts": {
+    "start": "node ./bin/gm.js",
+    "test": "node --test",
+    "lint": "node ./scripts/lint.js"
+  },
+  "keywords": [
+    "git",
+    "ssh",
+    "github",
+    "bitbucket",
+    "cli",
+    "developer-tools",
+    "git-identity"
+  ],
+  "author": "Md Siddiqur Rahman",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}

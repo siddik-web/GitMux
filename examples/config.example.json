@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "profiles": {
+    "personal": {
+      "name": "personal",
+      "provider": "github",
+      "gitName": "Md Siddiqur Rahman",
+      "email": "personal@example.com",
+      "sshHost": "github-personal",
+      "sshKey": "~/.ssh/gitmux/github-personal"
+    },
+    "work": {
+      "name": "work",
+      "provider": "bitbucket",
+      "gitName": "Md Siddiqur Rahman",
+      "email": "work@company.com",
+      "sshHost": "bitbucket-work",
+      "sshKey": "~/.ssh/gitmux/bitbucket-work"
+    }
+  },
+  "workspaces": [
+    {
+      "path": "~/Code/Personal",
+      "profile": "personal"
+    },
+    {
+      "path": "~/Code/Work",
+      "profile": "work"
+    }
+  ],
+  "settings": {
+    "guard": true,
+    "managed": true
+  }
+}
